@@ -1,0 +1,472 @@
+/**
+ * warning_type   1：水质报警
+ */
+export const warnings = [	
+	{		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "黑龙江污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "黑龙江污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 3,
+		"handled": 2,
+		"time": "2023-03-01",
+		"facName": "江苏污水厂",
+		"count": 5
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "江苏污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 1,
+		"handled": 3,
+		"time": "2023-03-01",
+		"facName": "内蒙污水厂",
+		"count": 4
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "内蒙污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 1,
+		"handled": 2,
+		"time": "2023-03-01",
+		"facName": "吉林污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "吉林污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "北京污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "北京污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 4,
+		"time": "2023-03-01",
+		"facName": "辽宁污水厂",
+		"count": 6
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 2,
+		"time": "2023-03-01",
+		"facName": "辽宁污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "河北污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "河北污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "天津污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "天津污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "山西污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "山西污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "陕西污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "陕西污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "甘肃污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 5,
+		"time": "2023-03-01",
+		"facName": "甘肃污水厂",
+		"count": 6
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 5,
+		"handled": 3,
+		"time": "2023-03-01",
+		"facName": "宁夏污水厂",
+		"count": 8
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 2,
+		"time": "2023-03-01",
+		"facName": "宁夏污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 3,
+		"time": "2023-03-01",
+		"facName": "青海污水厂",
+		"count": 5
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "青海污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "四川污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 3,
+		"time": "2023-03-01",
+		"facName": "四川污水厂",
+		"count": 4
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "重庆污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "重庆污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 3,
+		"time": "2023-03-01",
+		"facName": "湖南污水厂",
+		"count": 5
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "湖南污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "岳阳污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "岳阳污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "云南污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "云南污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "福建污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "福建污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "广东污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "广东污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "湛江污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "湛江污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "惠州污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "惠州污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "湖北污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "湖北污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "荆州污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "荆州污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "南宁污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "南宁污水厂",
+		"count": 2
+	},
+	{
+		
+		"warning_type": 1,
+		"no_handle": 2,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "柳州污水厂",
+		"count": 3
+	},
+	{
+		
+		"warning_type": 2,
+		"no_handle": 1,
+		"handled": 1,
+		"time": "2023-03-01",
+		"facName": "柳州污水厂",
+		"count": 2
+	}
+]

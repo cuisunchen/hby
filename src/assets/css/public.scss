@@ -1,0 +1,295 @@
+html,body, #app{
+    width: 100%;
+    height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,span, i, em, div /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+i{
+	font-style: normal;
+}
+em{
+	font-style: normal;
+}
+
+input{
+	border: none;
+	outline: none;
+	width: auto;
+	background-color: transparent;
+}
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.text-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+*::-webkit-scrollbar-track-piece {
+    background: transparent;
+    z-index: 1;
+}
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 12px;
+    border-radius: 6px;
+    z-index: 1;
+}
+*:hover::-webkit-scrollbar-thumb {
+    position: relative;
+    background-color: hsla(220,4%,58%,.3);
+    border-radius: 8px;
+    z-index: 1;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+*:hover::-webkit-scrollbar-thumb:hover {
+    background-color: hsla(220,4%,58%,.5);
+}
+
+@media (prefers-color-scheme: light) {
+     :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-shrink{
+    flex-shrink: 0;
+}
+
+.flex1{
+    flex: 1;
+}
+.flex2{
+	flex: 2;
+}
+.flex3{
+	flex: 3;
+}
+.flex4{
+	flex: 4;
+}
+.flex5{
+	flex: 5;
+}
+.flex6{
+	flex: 6;
+}
+.flex7{
+	flex: 7;
+}
+.flex8{
+	flex: 8;
+}
+
+.align-center{
+    align-items: center;
+}
+.align-left{
+    align-items: flex-start;
+}
+.align-right{
+    align-items: flex-end;
+}
+
+.justify-left{
+    justify-content: left;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-right{
+    justify-content: right;
+}
+
+.all-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between{
+    justify-content: space-between;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+.borderShadow{
+    border: 1px solid rgba(0, 253, 255, .5);
+    box-shadow: 0 0 15px -2px rgba(0, 253, 255, .6) inset;
+}
+.shadowBox{
+    box-shadow: 0 0 15px -2px rgba(0, 253, 255, 1) inset;
+}
+.ellipsis{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+
+/* animate.css */
+.animate{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInLeft{
+    animation-name: fadeInLeft;
+}
+@keyframes fadeInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeInRight{
+    animation-name: fadeInRight;
+}
+@keyframes fadeInRight{
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.fadeInTop {
+	-webkit-animation-name: fadeInTop;
+	animation-name: fadeInTop;
+}
+@keyframes fadeInTop {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
+.delay1 {
+	animation-delay: 0.6s;
+}
+.delay2 {
+	animation-delay: 1.2s;
+}
+.delay3 {
+	animation-delay: 1.8s;
+}
+.delay4 {
+	animation-delay: 2.4s;
+}
+.delay5 {
+	animation-delay: 3s;
+}
+.delay6 {
+	animation-delay: 3.6s;
+}
+.delay7{
+    animation-delay: 4.2s;
+}
