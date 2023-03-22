@@ -5,7 +5,6 @@
 <script lang="ts" setup>	
 	import { ref, onMounted, onUnmounted,markRaw,defineComponent } from 'vue'
 	import { initEchart,unInstall,drawImg,options } from '@/js_sdk/chart'
-	import * as echarts from 'echarts'
 	
 	const props = defineProps(options)
 	

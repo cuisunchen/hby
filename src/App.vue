@@ -1,7 +1,7 @@
 <template>
-  	<div class="contain" v-contain="[1920,1080]">
+  	<div class="contain flex-column" v-contain="[1920,1080]">
         <pageHead />
-		<router-view />
+		<router-view class="flex1"/>
 	</div>
 </template>
 
@@ -25,7 +25,6 @@ import pageHead from '@/components/pageHead/pageHead.vue'
     .pageBox{
 		color: #fff;
 		width: 100%;
-		height: 100%;
         padding-top: 100px;
 	}
 }

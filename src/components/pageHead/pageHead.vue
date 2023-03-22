@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-	import { ref,onMounted,nextTick, watch } from 'vue'
+	import { ref, watch,unref } from 'vue'
 	import { useRouter } from 'vue-router'
 	
 	const router = useRouter()
@@ -64,9 +64,9 @@
 				break;
 		}
 	}
-	confirmActive()
+	
 	window.addEventListener('resize',() => {
-		slideWidth.value = navBox.value.$el.children[currentIndex.value].clientWidth  
+		slideWidth.value = navBox.value.children[currentIndex.value].clientWidth  
 	})
 	const fullScreenToggle = () => {
 		const fullScreenEl = document.documentElement
@@ -94,11 +94,11 @@
 		}
 		
 	}
-	onMounted(()=>{	
-		setTimeout(() =>{
-            slideWidth.value = navBox.value.children[0].clientWidth  
-        },0)
-	})
+
+    watch(()=>unref(router.currentRoute),(val) => {
+        confirmActive()
+        slideWidth.value = navBox.value.children[0].clientWidth 
+    })
 </script>
 
 <style lang="scss" scoped>

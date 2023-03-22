@@ -1,28 +1,32 @@
 <template>
-	<div class="mapInfo flex-column">
-		<div class="item1 flex1 flex align-center">
-			<img src="@/assets/imgs/ztts/map_txyc.png" alt="">
-			通讯异常
-		</div>
-		<div class="item2 flex1 flex align-center">
-			<img src="@/assets/imgs/ztts/map_txzc.png" alt="">
-			通讯正常
-		</div>
+	<div class="contentBot">
+		<hbySwipter></hbySwipter>
 	</div>
 </template>
 
 <script lang="ts" setup>
-	
+	import hbySwipter from './swiper.vue'
 </script>
 
 <style lang="scss" scoped>
+	.contentBot{
+		position: fixed;
+		bottom: 20px;
+		left: 550px;
+		right: 550px;
+		z-index: 9;
+		height: 250px;
+		.flex1{
+			margin-top: 20px;
+		}
+	}
 	.mapInfo{
 		width: 120px;
 		height: 80px;
 		padding: 4px 10px;
 		background-color: #005252 ;
 		position: fixed;
-		bottom: 100px;
+		bottom: 400px;
 		left: 550px;
 		z-index: 9;
 		.flex1{

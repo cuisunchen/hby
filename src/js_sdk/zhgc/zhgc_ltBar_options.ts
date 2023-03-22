@@ -56,7 +56,6 @@ export const make_xmqy_options = (query) =>{
 	
 	maxNum = Math.max(...maxCounts)	
 	max = formatInt(maxNum)
-	console.log(max)
 	return {
 		grid: {
 			containLabel: true,

@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-	import defaultIcon from '../../static/imgs/zhsc_drsssj_sscsl.png'
+	import defaultIcon from '../../assets/imgs/zhsc_drsssj_sscsl.png'
 	const props = defineProps({
 		imgUrl: {
 			type: String,
@@ -53,7 +53,7 @@
 	        height: 45px;
 	        margin-left: -10px;
 	        padding: 10px 20px 10px 20px;
-	        background: url('../../../static/imgs/fgs001.png') no-repeat;
+	        background: url('../../assets/imgs/fgs001.png') no-repeat;
 	        background-size: 100% 100%;
 	        .title{
 	            font-size: 14px;

@@ -1,12 +1,11 @@
 <template>
-    <div class="pageBox">qyhx</div>
+	<div class="pageBox flex-column">
+		<top class="flex1" />
+		<bottom class="flex1" />
+	</div>
 </template>
 
 <script lang="ts" setup>
-import { defineComponent, getCurrentInstance, reactive, ref } from 'vue';
-
+	import top from './components/top.vue'
+	import bottom from './components/bottom.vue'	
 </script>
-
-<style lang="scss" scoped>
-
-</style>

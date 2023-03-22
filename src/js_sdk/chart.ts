@@ -19,7 +19,6 @@ export const initEchart = (el: HTMLElement) => {
 
 export const unInstall = (myChart: any) => {
 	window.onresize = null;
-	myChart.value.dispose()
 	window.removeEventListener('resize',listen)
 	if (myChart.value) {
 		myChart.value.dispose()

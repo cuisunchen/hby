@@ -1,4 +1,4 @@
-let dashedPic = '../../static/imgs/dashed.png';
+import dashedPic from '../../assets/imgs/dashed.png'
 // let color = ['#00FDFF', '#ffc300', '#00e473', '#009DFF'];
 // let chartData = [
 // 	{ name: "云南大区", value: 8211, unit: '元' },

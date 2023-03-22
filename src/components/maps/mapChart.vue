@@ -19,23 +19,13 @@
 	let info = ref()
 	let dialogPos = ref({})
 	const chinaMap = ref()
-	let myChart = ref(null)
+	let myChart = ref()
 	
 	let getMapData = () => {
-        // debugger
         aixos.get('/public/mapData/china.json').then(res => {
-            console.log(res)
             echarts.registerMap('china', res.data);		
             drawImg()
         })
-		// uni.request({
-		// 	url: '/static/mapData/china.json',
-		// 	method: 'GET',
-		// 	success: (res:any) => {
-		// 		echarts.registerMap('china', res.data);		
-		// 		drawImg()
-		// 	}
-		// })
 	}
 	const drawImg = () => {		
 		myChart.value.on('georoam', (params)=> {
