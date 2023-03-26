@@ -13,8 +13,6 @@ import { onMounted, ref, onUnmounted } from "vue";
 import {creatThree} from '@/js_sdk/three'
 let threeModel = ref()
 let { loading } = creatThree(threeModel)
-
-
 </script>
 
 <style lang="scss" scoped>

@@ -37,18 +37,27 @@
       "src/js_sdk/zhsc/zhsc_content_options.ts",
       "src/js_sdk/zhsc/zhsc_ltBar_options.ts",
       "src/js_sdk/zhsc/zhsc_rtBar_options.ts",
+
       "src/js_sdk/zhyw/zhyw_content_options.ts",
       "src/js_sdk/zhyw/zhyw_ltBar_options.ts",
       "src/js_sdk/zhyw/zhyw_rtBar_options.ts",
+
       "src/js_sdk/ztts/ztts_content_options.ts",
       "src/js_sdk/ztts/ztts_ltBar_options.ts",
       "src/js_sdk/ztts/ztts_rtBar_options.ts",
+
       "src/js_sdk/zhjy/zhjy_content_options.ts",
       "src/js_sdk/zhjy/zhjy_rtBar_options.ts",
+
       "src/js_sdk/zhgc/zhgc_ltBar_options.ts",
       "src/js_sdk/zhgc/zhgc_rtBar_options.ts",
+
       "src/js_sdk/qyhx/qyhx_bot_options.ts",
-      "src/js_sdk/qyhx/qyhx_top_options.ts"
+      "src/js_sdk/qyhx/qyhx_top_options.ts",
+
+		"src/js_sdk/chart.ts",
+      "src/js_sdk/three.js"
+      
     ]
   }
 }

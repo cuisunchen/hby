@@ -4,7 +4,6 @@
 		<rightBar />
 		<content />
 		<contentTop />
-		<!-- <contentBot /> -->
     </div>
 </template>
 
@@ -13,7 +12,6 @@
 	import rightBar from './components/rightBar.vue'
 	import content from './components/content.vue'
 	import contentTop from './components/contentTop.vue'
-	import contentBot from './components/contentBot.vue'
 </script>
 
 <style lang="scss" scoped>
