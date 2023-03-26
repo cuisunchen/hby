@@ -1,9 +1,9 @@
 <template>
 	<div class="mapEchart" ref="chinaMap"></div>
-	<myDialog :showDialog="showDialog" :info="info" :top="dialogPos.top" :left="dialogPos.left"></myDialog>
+	<myDialog :showDialog="showDialog" :info="info" :top="dialogPos.top" :left="dialogPos.left" @close="close"></myDialog>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 	import { ref, onMounted, onUnmounted, markRaw } from 'vue'
 	import myDialog from './mapDialog.vue'
 	import * as echarts from 'echarts'
@@ -13,7 +13,11 @@
 		option: {
 			type: Object,
 			default: () => {}
-		}
+		},
+        isClick: {
+            type: Boolean,
+            default: () => true
+        }
 	})
 	let showDialog = ref(false)
 	let info = ref()
@@ -42,7 +46,10 @@
 		});
 		myChart.value.on('click', (params)=> {
 			if(params.componentSubType == 'effectScatter' && params.data != undefined){
-				showDialog.value = true
+                if(props.isClick){
+                    showDialog.value = true
+                }
+				
 				info.value = params.data.params
 				dialogPos.value.left = params.event.offsetX + 10
 				dialogPos.value.top = params.event.offsetY + 10
@@ -56,8 +63,14 @@
 	const chartResize = () => {
 		myChart.value.resize
 	}
+
+    const close = () => {
+        showDialog.value = false
+    }
+
 	onMounted(()=>{
 		myChart.value = markRaw(echarts.init(chinaMap.value))
+        let dom = document.querySelector('#app').firstChild
 		window.onresize = myChart.value.resize;
 		window.addEventListener('resize', chartResize)
 		getMapData()

@@ -27,7 +27,6 @@
 			default: () => true
 		},
 	})
-	
 	const emits = defineEmits(['close'])
 	const posLt = computed(() => typeof props.left == 'string' ? props.left : props.left + 'px')
 	const posTop = computed(() => typeof props.top == 'string' ? props.top : props.top + 'px')
@@ -48,7 +47,7 @@
     .close{
         width: 32px;
         height: 32px;
-        background: url('../../static/imgs/ztts/tc_close.png') no-repeat;
+        background: url('../../assets/imgs/ztts/tc_close.png') no-repeat;
         background-size: cover;
         position: absolute;
         right: -32px;

@@ -40,7 +40,7 @@ export const option = {
 	geo: {
 		map: 'china',
 		aspectScale: 0.75, //长宽比
-		zoom: 0.8,
+		zoom: 1,
 		roam: true,
 		top: 100,
 		bottom: 260,
@@ -98,7 +98,7 @@ export const option = {
 					color: 'rgb(183,185,14)'
 				}
 			},
-			zoom: 0.8,
+			zoom: 1,
 			itemStyle: {
 				borderColor: 'rgba(147, 235, 248,.5)',
 				borderWidth: 1,

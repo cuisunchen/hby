@@ -27,5 +27,21 @@ import pageHead from '@/components/pageHead/pageHead.vue'
 		width: 100%;
         padding-top: 100px;
 	}
+    .el-loading-spinner{
+        .path {
+            -webkit-animation: loading-dash 1.5s ease-in-out infinite;
+            animation: loading-dash 1.5s ease-in-out infinite;
+            stroke-dasharray: 90, 150;
+            stroke-dashoffset: 0;
+            stroke-width: 6;
+            stroke-linecap: round;
+            stroke: #00FDFF !important;
+        }
+        .el-loading-text{
+            color: #15FDFF !important;
+            font-size: 20px !important;
+            margin-top: 10px;
+        }
+    }
 }
 </style>

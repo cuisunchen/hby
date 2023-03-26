@@ -151,7 +151,6 @@ export const make_qyczys_options = (qyczObj: QyczqsDataObjType) => {
 				fontSize: 15,				
 			},
 			formatter: (params:any) => {
-				console.log(params)
 				let str = params[0].axisValueLabel + '<br>'			
 				for (let item of params) {
 					if(item.seriesName && !item.seriesName.includes('series')){

@@ -1,6 +1,6 @@
 <template>
 	<Teleport to="#app">
-		<myDialog class="dialog" :show="visible" :left="left" :top="top" @close="close">
+		<myDialog class="dialog" :show="showDialog" :left="left" :top="top" @close="close">
 			<div class="dialogTop">
 			    <div class="title flex align-center">
 			        <div class="icon"></div>
@@ -20,7 +20,7 @@
 			    <div class="handly flex align-center">
 			        <div class="handleWater flex1 flex align-center">
 			            <div class="lt">
-			                <img src="../../static/imgs/ztts/tc_drsl.png" alt="">
+			                <img src="../../assets/imgs/ztts/tc_drsl.png" alt="">
 			            </div>
 			            <div class="rt">
 			                <div class="tit">当日处理水量</div>
@@ -29,7 +29,7 @@
 			        </div>
 			        <div class="outWater flex1 flex align-center">
 			            <div class="lt">
-			                <img src="../../static/imgs/ztts/tc_drsl.png" alt="">
+			                <img src="../../assets/imgs/ztts/tc_drsl.png" alt="">
 			            </div>
 			            <div class="rt">
 			                <div class="tit">当日处理水量</div>
@@ -37,15 +37,6 @@
 			            </div>
 			        </div>                    
 			    </div>
-			</div>
-			<div class="video flex align-center">
-			    <div class="icon"><img src="../../static/imgs/ztts/tc_jk.png" alt=""></div>
-			    <div class="name flex1">视频监控</div>
-			    <div class="iconRt flex all-center">
-			        <img src="../../static/imgs/ztts/tc_go.png" alt="">
-			    </div>
-			    <div class="botLt corner"></div>
-			    <div class="botRt corner"></div>
 			</div>
 		</myDialog>
 	</Teleport>	
@@ -75,14 +66,10 @@
 			}
 		}
 	})
-	let visible = props.showDialog
+
 	const close = () => {
-		visible = false
+		emits('close')
 	}
-	
-	watch(()=>props.showDialog,(val)=>{
-		visible = val
-	})
 </script>
 
 <style lang="scss" scoped>
@@ -100,8 +87,8 @@
 		    color: #00FDFF;         
 		    .icon{
 		        width: 30px;
-		        height: 26px;
-		        background: url('../../static/imgs/top_tc.png') no-repeat;
+		        height: 28px;
+		        background: url('../../assets/imgs/top_tc.png') no-repeat;
 		        background-size: cover;
 		    }
 		    .tit{
@@ -117,7 +104,7 @@
 		    .icon{
 		        width: 24px;
 		        height: 24px;
-		        background: url('../../static/imgs/ztts/tc_lxr.png') no-repeat;
+		        background: url('../../assets/imgs/ztts/tc_lxr.png') no-repeat;
 		        background-size: 100% 100%;
 				margin-top: 2px;
 		    }
@@ -137,7 +124,7 @@
 		        width: 24px;
 		        height: 24px;
 				margin-top: 2px;
-		        background: url('../../static/imgs/ztts/tc_dz.png') no-repeat;
+		        background: url('../../assets/imgs/ztts/tc_dz.png') no-repeat;
 				background-size: 100% 100%;
 		    }
 		    .label{
@@ -183,7 +170,7 @@
 		        height: 10px;
 		        left: -2px;
 		        top: -9px;        
-		        background: url('../../static/imgs/bottomleft.png') no-repeat;
+		        background: url('../../assets/imgs/bottomleft.png') no-repeat;
 		        background-size: cover;
 		    }
 		    .botRt{
@@ -192,7 +179,7 @@
 		        height: 10px;
 		        right: -2px;
 		        top: -9px;        
-		        background: url('../../static/imgs/bottomright.png') no-repeat;
+		        background: url('../../assets/imgs/bottomright.png') no-repeat;
 		        background-size: cover;
 		    }
 		}

@@ -1,6 +1,6 @@
 <template>
 	<div class="content">
-		<mapChart :option="option" />
+		<mapChart :option="option" :isClick="false"/>
 	</div>
 </template>
 
