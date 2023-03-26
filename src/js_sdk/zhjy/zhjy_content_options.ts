@@ -257,7 +257,6 @@ const handleData = () => {
 				},
 				padding: [5,10],
 				formatter: (params:any) => {
-					console.log(1111)
 					let str = params[0].axisValueLabel + '<br>'			
 					// for (let item of params) {
 					// 	if(item.seriesName && !item.seriesName.includes('series')){
