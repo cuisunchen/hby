@@ -47,7 +47,7 @@
 	import rank from '@/components/rank/rankBar.vue'
     import legends from '@/components/legends/legends.vue'
 	
-	import { xmzjOpt } from '@/js_sdk/zhgc/zhgc_rtBar_options'
+	import { xmzjOpt } from '@/js_sdk/zhgc/zhgc_options'
 	import zhgc_xmgcjd from '@/assets/imgs/zhgc_xmgcjd.png'
 	
 	const ranks = [

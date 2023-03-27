@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 	import mapChart from '@/components/maps/mapChart.vue'
-	import { option } from '@/js_sdk/zhsc/zhsc_content_options'
+	import { option } from '@/js_sdk/zhsc/zhsc_rtBar_options'
 
 </script>
 

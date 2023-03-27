@@ -23,7 +23,7 @@
 	import itemTitle from '@/components/itemTitle/itemTitle.vue'
 	import chart from '@/components/chart/chart.vue'
 	import ztts_rwqs from '../../../assets/imgs/ztts/ztts_rwqs.png'
-	import { make_zcyc_options } from'@/js_sdk/zhsc/zhsc_content_options'
+	import { make_zcyc_options } from'@/js_sdk/zhsc/zhsc_rtBar_options'
 	
 	let options1 = make_zcyc_options(40,'出水达标率')
 	let options2 = make_zcyc_options(60,'污水处理\n负荷比')

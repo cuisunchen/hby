@@ -24,10 +24,12 @@
 	import infos from './infos.vue'
 	import infoCard from '@/components/infoCard/infoCard.vue'
 	import mapChart from '@/components/maps/mapChart.vue'
-	import { option } from '@/js_sdk/qyhx/qyhx_top_options'
+	import { makeOpt1 } from '@/js_sdk/qyhx/qyhx_options'
 	
 	import ztits_wsc from '@/assets/imgs/ztts/ztits_wsc.png'
 	import ztits_dnclsl from '@/assets/imgs/ztts/ztits_dnclsl.png'
+	
+	let option = makeOpt1()
 	
 </script>
 
@@ -37,7 +39,7 @@
 	.mapBox{
 		.desc{
 			width: 200px;
-			margin-top: 110px;
+			margin-top: 10px;
 			.bot{
 				padding: 20px;
 				margin-bottom: 20px;

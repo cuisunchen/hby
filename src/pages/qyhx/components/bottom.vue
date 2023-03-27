@@ -34,7 +34,7 @@
 	import ztsc_yycb from '../../../assets/imgs/zhsc_yycb.png'
 	
 	import { make_wspf_options } from '@/js_sdk/zhsc/zhsc_ltBar_options'
-	import { makeOpt,qydtOpt } from '@/js_sdk/qyhx/qyhx_bot_options'
+	import { makeOpt,qydtOpt } from '@/js_sdk/qyhx/qyhx_options'
 	
 	let qyhxOptions = makeOpt()
 	

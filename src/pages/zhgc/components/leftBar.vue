@@ -21,7 +21,7 @@
 	import barBox from '@/components/barBox/barBox.vue'
 	import itemTitle from '@/components/itemTitle/itemTitle.vue'
     import chart from '@/components/chart/chart.vue'
-	import  {make_xmqy_options} from '@/js_sdk/zhgc/zhgc_ltBar_options'
+	import  {make_xmqy_options} from '@/js_sdk/zhgc/zhgc_options'
 	import  {yysrOpt} from '@/js_sdk/zhjy/zhjy_rtBar_options'
 	
 	import qyczPng from '@/assets/imgs/ztts_qycz.png'	
