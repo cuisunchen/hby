@@ -6,7 +6,7 @@
     </border>
 </template>
 
-<script setup>
+<script   setup>
 	import { computed,watch } from 'vue'
 	import border from '../border/border.vue'
 	let props = defineProps({

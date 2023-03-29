@@ -8,7 +8,7 @@
 	</div>
 </template>
 
-<script setup>
+<script   setup>
 import { onMounted, ref, onUnmounted } from "vue";
 import { creatThree } from '@/js_sdk/three'
 let threeModel = ref()

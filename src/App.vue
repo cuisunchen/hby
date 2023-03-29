@@ -1,14 +1,14 @@
+<script setup>
+import pageHead from '@/components/pageHead/pageHead.vue'
+</script>
+
 <template>
-  	<div class="contain flex-column" v-contain="[1920,1080]">
+    <div class="contain flex-column" v-contain="[1920,1080]">
         <pageHead />
 		<router-view class="flex1"/>
 	</div>
 </template>
 
-<script setup lang="ts">
-import pageHead from '@/components/pageHead/pageHead.vue'
-
-</script>
 <style lang="scss">
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;

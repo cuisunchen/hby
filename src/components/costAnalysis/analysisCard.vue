@@ -24,37 +24,24 @@
     </border>
 </template>
 
-<script>
-import border from '../border/border'
-export default {
-    components: {border},
-    props:{
-        dataObj:{
-            type: Object,
-            default(){
-                return {
-                    // title: '营业收入',
-                    // value1: 200,
-                    // value2: '12.14%',
-                    // unit1: '万元',
-                    // unit2: '同比',
-                    // type: 'rise'     //  控制上下箭头 rise：升 drop：降
-                }
+<script   setup>
+import border from '../border/border.vue'
+defineProps({
+    dataObj:{
+        type: Object,
+        default(){
+            return {
+                // title: '营业收入',
+                // value1: 200,
+                // value2: '12.14%',
+                // unit1: '万元',
+                // unit2: '同比',
+                // type: 'rise'     //  控制上下箭头 rise：升 drop：降
             }
-        },
+        }
     },
-    data() {
-        return {
+})
 
-        };
-    },
-    created() {
-
-    },
-    methods: {
-
-    },
-}
 </script>
 <style lang='scss' scoped>
 .analysisCard{

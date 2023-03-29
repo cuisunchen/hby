@@ -3,7 +3,7 @@
 	<myDialog :showDialog="showDialog" :info="info" :top="dialogPos.top" :left="dialogPos.left" @close="close"></myDialog>
 </template>
 
-<script setup>
+<script   setup>
 	import { ref, onMounted, onUnmounted, markRaw } from 'vue'
 	import myDialog from './mapDialog.vue'
 	import * as echarts from 'echarts'
@@ -26,7 +26,7 @@
 	let myChart = ref()
 	
 	let getMapData = () => {
-        aixos.get('/public/mapData/china.json').then(res => {
+        aixos.get('/mapData/china.json').then(res => {
             echarts.registerMap('china', res.data);		
             drawImg()
         })

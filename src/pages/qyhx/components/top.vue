@@ -20,7 +20,7 @@
 	</div>
 </template>
 
-<script lang="ts" setup>
+<script   setup>
 	import infos from './infos.vue'
 	import infoCard from '@/components/infoCard/infoCard.vue'
 	import mapChart from '@/components/maps/mapChart.vue'
