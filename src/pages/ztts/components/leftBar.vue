@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts" setup>
-	import barBox from '@/components/barBox/barBox.vue'
+	import barBox from '../../../components/barBox/barBox.vue'
 	import itemTitle from '@/components/itemTitle/itemTitle.vue'
     import chart from '@/components/chart/chart.vue'
 	import legends from '@/components/legends/legends.vue'	

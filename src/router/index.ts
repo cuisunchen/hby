@@ -1,6 +1,6 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import type { RouteRecordRaw } from "./types";
-// static modules
+
 import mainRoutes from './routes'
 
 // import { getCookie } from '/@/utils/auth/cookie'
@@ -11,7 +11,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior() {
     // always scroll to top

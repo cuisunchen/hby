@@ -11,7 +11,7 @@ interface TYPE1 extends DirectiveBinding {
 interface TYPE2 extends DirectiveBinding {
     value: Array<Number>
 }
-function handler(el: HTMLElement, binding) {
+function handler(el: HTMLElement, binding: any) {
     const { width, height, callback } = binding
     const { clientWidth, clientHeight } = el.parentElement
     const widthScale = floor(clientWidth / width, 2)
