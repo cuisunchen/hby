@@ -37,7 +37,7 @@ export default defineConfig({
         // https://cn.vitejs.dev/config/#resolve-alias
         alias: {
         // 设置路径
-        '~': path.resolve(__dirname, './'), // 这个 __dirname 也不报错了 ************
+        '~': path.resolve(__dirname, './'), 
         // 设置别名 这里的./指的是 vite.config.js 的所载目录（根目录）下面的 src
         '@': path.resolve(__dirname, './src')
         },

@@ -79,11 +79,11 @@
 	    let loader =  new MTLLoader()
 	    let objloader =  new OBJLoader()
 	    //  mtl为材质模型，obj为3d模型，是纯白色的，需要先加载材质，然后将材质赋值给模型的材质，模型才会有颜色
-	    loader.load('/public/threeModels/three.mtl',(mtl) => { 
+	    loader.load('/threeModels/three.mtl',(mtl) => { 
 	        mtl.preload();
 	        // 加载贴图
 	        objloader.setMaterials(mtl);
-	        objloader.load(`/public/threeModels/three.obj`, (obj) => {
+	        objloader.load(`/threeModels/three.obj`, (obj) => {
 	            //  定义树的材质
 	            let newMaterial = new MeshBasicMaterial({
 	                color: 0x339900, //可修改报警时的闪烁颜色
@@ -110,7 +110,7 @@
 	let soldier,skeleton;
 	const loadSoldier = () => {
 	    let loader = new GLTFLoader()
-	    loader.load('/public/threeModels/Soldier.glb', (gltf) => {
+	    loader.load('/threeModels/Soldier.glb', (gltf) => {
 	        soldier = gltf.scene
 	        soldier.scale.set(30,30,30)
 	        soldier.position.set(70,0,0)
