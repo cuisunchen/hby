@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, onUnmounted } from "vue";
+	import { onMounted, ref, onUnmounted } from "vue";
 	import { Scene,PerspectiveCamera,DirectionalLight,AmbientLight,WebGLRenderer,SkeletonHelper,Vector2,Raycaster,MeshBasicMaterial,DoubleSide,
 	    AnimationMixer,Clock,Texture,SpriteMaterial,Sprite,CatmullRomCurve3,Vector3,Matrix4,Euler,Quaternion } from 'three'
 	

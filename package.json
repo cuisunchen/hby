@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:gh": "vite build --outDir docs"
   },
   "dependencies": {
     "@tweenjs/tween.js": "^18.6.4",
@@ -18,18 +19,19 @@
     "sass": "^1.59.3",
     "three": "^0.150.1",
     "three-obj-mtl-loader": "^1.0.3",
+    "vite-plugin-compression": "^0.5.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@vitejs/plugin-vue": "^4.1.0",
+    "gh-pages": "^6.3.0",
     "unplugin-auto-import": "^0.15.2",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.2.0"
   },
-
-"build": {
+  "build": {
     "appId": "com.test",
     "productName": "electron打包测试",
     "copyright": "Copyright © 2023",
@@ -37,9 +39,7 @@
       "category": "public.app-category.utilities",
       "icon": "public/icons/icon.icns"
     },
-    "win": {
-      
-    },
+    "win": {},
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
