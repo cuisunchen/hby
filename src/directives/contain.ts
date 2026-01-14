@@ -11,7 +11,7 @@ interface TYPE1 extends DirectiveBinding {
 interface TYPE2 extends DirectiveBinding {
     value: Array<Number>
 }
-function handler(el: HTMLElement, binding: any) {
+function handler(el: any, binding: any) {
     const { width, height, callback } = binding
     const { clientWidth, clientHeight } = el.parentElement
     const widthScale = floor(clientWidth / width, 2)
@@ -23,12 +23,12 @@ function handler(el: HTMLElement, binding: any) {
     isFunction(callback) && callback(scale)
 }
 const containDirective: Directive = {
-    mounted(el: HTMLElement, binding: TYPE1 | TYPE2) {
+    mounted(el: any, binding: TYPE1 | TYPE2) {
         const parent: HTMLElement | null = el.parentElement
         if (!parent) {
             throw new Error('v-contain指令所在的dom需要一个容器')
         }
-        let width, height, callback
+        let width, height, callback: Function
         if (isArray(binding.value)) {
             const [w, h] = binding.value
             width = w

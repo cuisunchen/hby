@@ -24,9 +24,9 @@
 	let dialogPos = ref({})
 	const chinaMap = ref()
 	let myChart = ref()
-	
+	const baseUrl = import.meta.env.BASE_URL;
 	let getMapData = () => {
-        aixos.get('/mapData/china.json').then(res => {
+        aixos.get(baseUrl + '/mapData/china.json').then(res => {
             echarts.registerMap('china', res.data);		
             drawImg()
         })
