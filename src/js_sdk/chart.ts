@@ -83,7 +83,7 @@ export const makeOption = (value:number=0,title:String='出水达标率') => {
 					color: '#00FBFF',
 					distance: 15,
 					fontSize: 10,
-					formatter: function(v) {
+					formatter: function(v: string) {
 						switch (v + '') {
 							case '0':
 								return '0';
@@ -157,7 +157,7 @@ export const makeOption = (value:number=0,title:String='出水达标率') => {
 						}
 					},
 					label: {
-						formatter: function(params) {
+						formatter: function(params: { value: string; }) {
 							return params.value + '%';
 						},
 						color: '#FFFFFF',

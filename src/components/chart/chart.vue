@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>	
-	import { ref, onMounted, onUnmounted,markRaw,defineComponent } from 'vue'
+	import { ref, onMounted, onUnmounted } from 'vue'
 	import { initEchart,unInstall,drawImg,options } from '@/js_sdk/chart'
 	
 	const props = defineProps(options)

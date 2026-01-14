@@ -237,7 +237,7 @@ export const makeOption = (value=0,title='出水达标率') => {
 
 import { onMounted, ref, onUnmounted } from "vue";
 import { Scene,PerspectiveCamera,DirectionalLight,AmbientLight,WebGLRenderer,SkeletonHelper,Vector2,Raycaster,MeshBasicMaterial,DoubleSide,
-    AnimationMixer,Clock,Texture,SpriteMaterial,Sprite,CatmullRomCurve3,Vector3,Matrix4,Euler,Quaternion } from 'three'
+    AnimationMixer,Clock,CatmullRomCurve3,Vector3,Matrix4,Euler,Quaternion } from 'three'
 
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
@@ -249,7 +249,7 @@ import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import TWEEN from '@tweenjs/tween.js'
 
-export const creatThree = (threeModel) => {
+export const createThree = (threeModel) => {
     let scene = new Scene(), camera = null, renderer = null, controls = null,clock;
     let composer, outlinePass, mixer, walkAction;
     let initCameraX = 0,initCameraY = 700,initCameraZ = 800;
@@ -299,15 +299,16 @@ export const creatThree = (threeModel) => {
         controls.dampingFactor = 0
     }
 
+    const baseUrl = import.meta.env.BASE_URL;
     const loadModel = () => {
         let loader =  new MTLLoader()
         let objloader =  new OBJLoader()
         //  mtl为材质模型，obj为3d模型，是纯白色的，需要先加载材质，然后将材质赋值给模型的材质，模型才会有颜色
-        loader.load('/threeModels/three.mtl',(mtl) => { 
+        loader.load(baseUrl + '/threeModels/three.mtl',(mtl) => { 
             mtl.preload();
             // 加载贴图
             objloader.setMaterials(mtl);
-            objloader.load(`/threeModels/three.obj`, (obj) => {
+            objloader.load(`${baseUrl}/threeModels/three.obj`, (obj) => {
                 //  定义树的材质
                 let newMaterial = new MeshBasicMaterial({
                     color: 0x339900, //可修改报警时的闪烁颜色
@@ -334,7 +335,7 @@ export const creatThree = (threeModel) => {
     let soldier,skeleton;
     const loadSoldier = () => {
         let loader = new GLTFLoader()
-        loader.load('/threeModels/Soldier.glb', (gltf) => {
+        loader.load(baseUrl + '/threeModels/Soldier.glb', (gltf) => {
             soldier = gltf.scene
             soldier.scale.set(30,30,30)
             soldier.position.set(70,0,0)

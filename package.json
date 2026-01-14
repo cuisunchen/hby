@@ -27,6 +27,7 @@
     "@types/node": "^18.15.11",
     "@vitejs/plugin-vue": "^4.1.0",
     "gh-pages": "^6.3.0",
+    "rollup-plugin-visualizer": "^6.0.5",
     "unplugin-auto-import": "^0.15.2",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.2.0"
